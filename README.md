@@ -1,4 +1,4 @@
-# Step 1
+# Step 2
 
 Go back to the [`master`](https://github.com/nikolasburk/graphqlday-workshop) branch.
 
@@ -33,7 +33,7 @@ mutation {
 
 ```graphql
 mutation {
-  publish(title: "post-0") {
+  publish(id: "post-0") {
     id
     published
   }
@@ -42,7 +42,7 @@ mutation {
 
 ```graphql
 mutation {
-  deletePost(title: "post-0") {
+  deletePost(id: "post-0") {
     id
     title
     content
