@@ -11,7 +11,7 @@ node src/index.js
 ## Sample queries/mutations
 
 ```graphql
-post(id: "post-0") {
+posts(searchString: "QL") {
   id
   title
   content
@@ -20,33 +20,10 @@ post(id: "post-0") {
 ```
 
 ```graphql
-mutation {
-  createDraft(
-    title: ""
-    content: ""
-  ) {
-    id
-    published
-  }
-}
-```
-
-```graphql
-mutation {
-  publish(title: "post-0") {
-    id
-    published
-  }
-}
-```
-
-```graphql
-mutation {
-  deletePost(title: "post-0") {
-    id
-    title
-    content
-    published
-  }
+post(id: "post-0") {
+  id
+  title
+  content
+  published
 }
 ```
