@@ -11,7 +11,8 @@ This git repository contains several branches that correspond to the "steps" to 
 ### 1. Clone the repository
 
 ```bash
-git clone git:
+git clone git@github.com:nikolasburk/graphqlday-workshop.git
+cd graphqlday-workshop
 ```
 
 ## Technology stack
@@ -32,7 +33,7 @@ The GraphQL server in this repository is build upon the following technologies:
 - [GraphQL Boilerplates](https://github.com/graphql-boilerplates): Starter kits for your next GraphQL project, no matter if backend-only (Node, TypeScript, ...) or fullstack (React, Vue, ...). Each boilerplate is build upon industry best practices and uses the latest GraphQL tooling.
 - [Top 5 Reasons To Use GraphQL](https://blog.graph.cool/top-5-reasons-to-use-graphql-b60cfa683511): Learn the top arguments why GraphQL GraphQL is the future of API development.
 - [How to wrap a REST API with GraphQL](https://blog.graph.cool/how-to-wrap-a-rest-api-with-graphql-8bf3fb17547d): 
-- Article series: GraphQL Server Basics:
+- GraphQL Server Basics:
   - [Part I: GraphQL Schemas, TypeDefs & Resolvers Explained](https://blog.graph.cool/graphql-server-basics-the-schema-ac5e2950214e)
   - [Part II: The Network Layer](https://blog.graph.cool/graphql-server-basics-the-network-layer-51d97d21861)
   - [Part III: Demystifying the `info` object in GraphQL resolvers](https://blog.graph.cool/graphql-server-basics-demystifying-the-info-argument-in-graphql-resolvers-6f26249f613a)
@@ -40,7 +41,7 @@ The GraphQL server in this repository is build upon the following technologies:
   - GraphQL servers:
     - [Deploying GraphQL servers with Zeit Now](https://blog.graph.cool/deploying-graphql-servers-with-zeit-now-85f4757b79a7)
     - [Deploying GraphQL servers with Apex Up](https://blog.graph.cool/deploying-graphql-servers-with-apex-up-522f2b75a2ac)
-  Prisma:
+  - Prisma:
     - [Deploying Prisma to AWS Fargate with Docker & CloudFormation](https://blog.graph.cool/how-to-deploy-a-prisma-cluster-to-aws-fargate-using-docker-cloudformation-293aa8727b89)
     - [Deploying Prisma DigitalOcean](https://www.prisma.io/docs/tutorials/cluster-deployment/digital-ocean-(docker-machine)-texoo9aemu)
     - [Deploying Prisma to Prisma Cloud](https://www.prisma.io/docs/tutorials/cluster-deployment/prisma-cloud-ua9gai4kie)
