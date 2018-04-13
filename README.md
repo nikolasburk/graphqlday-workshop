@@ -1,4 +1,4 @@
-# Step 1
+# Step 0
 
 Go back to the [`master`](https://github.com/nikolasburk/graphqlday-workshop) branch.
 
@@ -13,5 +13,16 @@ node src/index.js
 ```graphql
 query {
   info
+}
+```
+
+```graphql
+query {
+  posts {
+    id
+    title
+    content
+    published
+  }
 }
 ```
