@@ -8,7 +8,7 @@ This git repository contains several branches that correspond to the "steps" to 
 
 ## Usage
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone git@github.com:nikolasburk/graphqlday-workshop.git
