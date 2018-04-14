@@ -11,7 +11,7 @@ npm install -g prisma
 prisma deploy
 ```
 
-> **Note**: If you don't have [Docker](https://www.docker.com) installed on your machine, you need to remove the [`cluster`](./database/prisma.yml#L9) property from [`prisma.yml`]((./database/prisma.yml) and select a _development cluster_ when prompted by the CLI where to deploy your Prisma API. The endpoint that's then printed by the CLI needs to be pasted into [`index.js`](./src/index.js#L29) where `Prisma` is instantied.
+> **Note**: If you don't have [Docker](https://www.docker.com) installed on your machine, you need to remove the [`cluster`](./database/prisma.yml#L9) property from [`prisma.yml`](./database/prisma.yml) and select a _development cluster_ when prompted by the CLI where to deploy your Prisma API. The endpoint that's then printed by the CLI needs to be pasted into [`index.js`](./src/index.js#L29) where `Prisma` is instantied.
 
 ### Start the server
 
