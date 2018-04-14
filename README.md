@@ -9,8 +9,8 @@ This git repository contains several branches that correspond to the "steps" to 
 - [Step 0](https://github.com/nikolasburk/graphqlday-workshop/tree/step0): Minimal GraphQL server
 - [Step 1](https://github.com/nikolasburk/graphqlday-workshop/tree/step1): Extend API with query arguments
 - [Step 2](https://github.com/nikolasburk/graphqlday-workshop/tree/step2): Complete API operations
-- [Step 3](https://github.com/nikolasburk/graphqlday-workshop/tree/step3): Add database layer with Prisma and PRisma bind
-- [Step 4](https://github.com/nikolasburk/graphqlday-workshop/tree/step4): Complete API operations against
+- [Step 3](https://github.com/nikolasburk/graphqlday-workshop/tree/step3): Add database layer with Prisma and Prisma bindings
+- [Step 4](https://github.com/nikolasburk/graphqlday-workshop/tree/step4): Complete API operations against the database
 
 ## Usage
 
