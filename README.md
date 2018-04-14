@@ -172,7 +172,7 @@ The GraphQL server in this repository is build upon the following technologies:
 
 - [Node.JS Tutorial on How to GraphQL](https://www.howtographql.com/graphql-js/0-introduction/): In-depth tutorial covering topics like schema design, GraphQL bindings, authentication and realtime GraphQL subscriptions.
 - [GraphQL Boilerplates](https://github.com/graphql-boilerplates): Starter kits for your next GraphQL project, no matter if backend-only (Node, TypeScript, ...) or fullstack (React, Vue, ...). Each boilerplate is build upon industry best practices and uses the latest GraphQL tooling.
-- [Top 5 Reasons To Use GraphQL](https://blog.graph.cool/top-5-reasons-to-use-graphql-b60cfa683511): Learn the top arguments why GraphQL GraphQL is the future of API development.
+- [Top 5 Reasons To Use GraphQL](https://blog.graph.cool/top-5-reasons-to-use-graphql-b60cfa683511): Learn the top arguments why GraphQL is the future of API development.
 - [How to wrap a REST API with GraphQL](https://blog.graph.cool/how-to-wrap-a-rest-api-with-graphql-8bf3fb17547d): 
 - GraphQL Server Basics:
   - [Part I: GraphQL Schemas, TypeDefs & Resolvers Explained](https://blog.graph.cool/graphql-server-basics-the-schema-ac5e2950214e)
