@@ -1,4 +1,4 @@
-# Step 3
+# Step 4
 
 Go back to the [`master`](https://github.com/nikolasburk/graphqlday-workshop) branch.
 
