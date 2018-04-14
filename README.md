@@ -40,19 +40,38 @@ The Playground now allows to work with both GraphQL APIs side-by-side. It receiv
 ### Application layer (`graphql-yoga`)
 
 ```graphql
-query {
-  posts {
+post(id: "__POST_ID__") {
+  id
+  title
+  content
+  published
+}
+```
+
+```graphql
+mutation {
+  createDraft(
+    title: "How to GraphQL"
+    content: "Learn best practices all around developing GraphQL APIs"
+  ) {
     id
-    title
-    content
     published
   }
 }
 ```
 
 ```graphql
-query {
-  posts(searchString: "QL") {
+mutation {
+  publish(id: "__POST_ID__") {
+    id
+    published
+  }
+}
+```
+
+```graphql
+mutation {
+  deletePost(id: "__POST_ID__") {
     id
     title
     content
@@ -64,25 +83,9 @@ query {
 ### Database layer (Prisma)
 
 ```graphql
-mutation {
-  createPost(data: {
-    title: "GraphQL is great"
-    content: "It really is"
-  }) {
-    id
-    published
-  }
-}
-```
-
-```graphql
 query {
   posts(where: {
-    OR: [{
-      title_contains: "QL"
-      }, {
-      content_contains: "QL"
-    }]
+    title_contains: "QL"
   }) {
     id
     title
@@ -95,6 +98,37 @@ query {
 ```graphql
 query {
   post(where: {
+    id: "__POST_ID__"
+  }) {
+    id
+    title
+    content
+    published
+  }
+}
+```
+
+```graphql
+mutation {
+  updatePost(
+    where: {
+      id: "__POST_ID__"
+    }
+    data: {
+      published: true
+    }
+  ) {
+    id
+    title
+    content
+    published
+  }
+}
+```
+
+```graphql
+mutation {
+  deletePost(where: {
     id: "__POST_ID__"
   }) {
     id

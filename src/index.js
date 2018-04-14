@@ -21,17 +21,53 @@ const resolvers = {
         info,
       )
     },
-    // post: (_, args, context, info) => {
-    // }
+    post: (_, args, context, info) => {
+      return context.db.query.post(
+        {
+          where: {
+            id: args.id,
+          },
+        },
+        info,
+      )
+    },
   },
-  // Mutation: {
-  //   createDraft: (_, args, context, info) => {
-  //   },
-  //   publish: (_, args, context, info) => {
-  //   },
-  //   deletePost: (_, args, context, info) => {
-  //   }
-  // }
+  Mutation: {
+    createDraft: (_, args, context, info) => {
+      return context.db.mutation.createPost(
+        {
+          data: {
+            title: args.title,
+            content: args.content,
+          },
+        },
+        info,
+      )
+    },
+    publish: (_, args, context, info) => {
+      return context.db.mutation.updatePost(
+        {
+          where: {
+            id: args.id,
+          },
+          data: {
+            published: true,
+          },
+        },
+        info,
+      )
+    },
+    deletePost: (_, args, context, info) => {
+      return context.db.mutation.deletePost(
+        {
+          where: {
+            id: args.id,
+          },
+        },
+        info,
+      )
+    },
+  },
 }
 
 const server = new GraphQLServer({
