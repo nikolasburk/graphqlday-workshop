@@ -26,6 +26,13 @@ npm install -g graphql-cli
 graphql playground
 ```
 
+![](https://imgur.com/bX5TSzs.png)
+
+The Playground now allows to work with both GraphQL APIs side-by-side. It receives its information about the corresponding endpoints and schemas from the configuration in [`.graphqlconfig.yml`](.graphqlconfig.yml):
+
+- `app`: The application layer built with `graphql-yoga`
+- `database` The database layer configured with Prisma
+
 ## Sample queries/mutations
 
 > In the following queries/mutation, `__POST_ID__` is a placeholder that needs to be replaced with the `id` of an actual `Post` item in your database.
